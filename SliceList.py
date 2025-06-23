@@ -1,11 +1,15 @@
-n1 =[]
-n2 =[]
-def slice_num():
-    lst_num = [1,2,3,4,5,6,7,8,9,10]
-    global n1,n2
-    n1 = lst_num[:5:1]
-    n2 = n1[::-1]
+original_list=[1,2,3,4,5,6,7,8,9,10]
 
-def print_slice_num():
-    print("Extracted List:",n1)
-    print("Reverse List:",n2)
+extracted_list=original_list[:5]
+
+reversed_extracted_list=[]
+
+for item in extracted_list:
+    reversed_extracted_list.insert(0,item)
+
+print("original list")
+print(original_list)
+print("extracted list")
+print(extracted_list)
+print("reversed list")
+print(reversed_extracted_list)

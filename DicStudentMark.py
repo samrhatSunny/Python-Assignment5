@@ -1,9 +1,6 @@
-dt_studentMark = {}
-def updateStudent():
-    name = input("Enter student name")
-    mark = int(input("Enter student marks"))
-    dt_studentMark[name] = mark
-
-def get_student():
-    name = input("Enter student name")
-    print(dt_studentMark.get(name,"Student name not found"))
+dt_studentMark = {"Amol":55,"Vishal":65,"Amit":60,"Shreyas":75,"Pranav":59}
+strName = input("Enter student name ")
+if strName in dt_studentMark:
+    print(dt_studentMark[strName])
+else:
+    print("Student name not found")
